@@ -1,0 +1,21 @@
+name: 'Chromatic'
+
+on:
+  pull_request:
+    paths:
+      - 'library-c/**'
+
+jobs:
+  chromatic-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install dependencies
+        working-directory: ./library-c
+        run: npm ci
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        with:
+          workingDir: library-c
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}

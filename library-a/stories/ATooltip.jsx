@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Tooltip.css';
+import './ATooltip.css';
 
 /**
  * Primary UI component for user interaction
  */
-export const Tooltip = ({ label }) => {
+export const ATooltip = ({ label }) => {
   return (
-    <div className="Tooltip">
+    <div className="ATooltip">
       {label}
     </div>
   );
 };
 
-Tooltip.propTypes = {
+ATooltip.propTypes = {
   /**
-   * Tooltip contents
+   * ATooltip contents
    */
   label: PropTypes.string.isRequired
 };

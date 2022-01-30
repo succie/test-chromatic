@@ -4,7 +4,7 @@ import { Tooltip } from './Tooltip';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Tooltip',
+  title: 'library-b/Tooltip',
   component: Tooltip,
   argTypes: {}
 };

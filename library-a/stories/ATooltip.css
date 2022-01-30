@@ -1,0 +1,11 @@
+.Tooltip {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  background-color: #e0e0e0;
+  padding: 0.5rem 1.2rem;
+}

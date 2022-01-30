@@ -1,11 +1,6 @@
 name: 'Chromatic'
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'library-b/**'
   pull_request:
     paths:
       - 'library-b/**'
